@@ -1,0 +1,60 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>flex布局</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+        	display: flex;
+		    width: 1000px;
+		    flex-flow: row wrap;
+		    justify-content: space-between;
+		    margin: 50px auto;
+		    background-color: #ccc;
+		    align-content: baseline;
+        }
+        .main span {
+        	width: 132px;
+		    height: 200px;
+		    display: inline-block;
+		    background-color: #666;
+		    margin: 4px;
+        }
+        .main .emp{
+            height: 0;
+            border: none;
+            margin-top: 0;
+            margin-bottom: 0;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <span style="">1</span>
+        <span style="">2</span>
+        <span style="">3</span>
+        <span style="">4</span>
+        <span style="">5</span>
+        <span style="">6</span>
+        <span style="">7</span>
+        <span style="">8</span>
+        <span style="">9</span>
+        <span style="">10</span>
+        <span style="">11</span>
+        <span style="">12</span>
+        
+        <span class="emp" >empty</span>
+        <span class="emp" >empty</span>
+        <span class="emp" >empty</span>
+        <span class="emp" >empty</span>
+        <span class="emp" >empty</span>
+        <span class="emp" >empty</span>
+        <span class="emp" >empty</span>
+        <span class="emp" >empty</span>
+        <span class="emp" >empty</span>
+    </div>
+
+</body></html>
