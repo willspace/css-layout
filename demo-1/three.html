@@ -1,0 +1,61 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>flex布局</title>
+    <style type="text/css">
+        .container{width: 500px; margin: 50px auto;}
+        #shengbei .wrapper {padding: 0 100px 0 100px; color:#fff;}
+        #shengbei .col{position: relative;float: left;}
+        #shengbei .header {height: 50px;background-color: #666;color:#fff;}
+        #shengbei .main {width: 100%;height: 200px;background-color: #555;}
+        #shengbei .left {width: 100px;height: 200px;margin-left: -100%;left: -100px;background-color: #999;}
+        #shengbei .right {width: 100px;height: 200px;margin-left: -100px;right: -100px;background-color: #999;}
+        #shengbei .footer {height: 50px;background-color: #666; color:#fff;}
+
+        #bysf .wrapper {color:#fff;}
+        #bysf .col {float: left;}
+        #bysf .header {height: 50px;background-color: #666;color:#fff;}
+        #bysf .main {width: 100%;background-color: #555;}
+        #bysf .main-wrap {margin: 0 100px 0 100px;height: 200px;}
+        #bysf .left {width: 100px;height: 200px;margin-left: -100%;background-color: #999;}
+        #bysf .right {width: 100px;height: 200px;margin-left: -100px;background-color: #999;}
+        #bysf .footer {height: 50px;background-color: #666;color:#fff;}
+        .clearfix::after{content: "";display:block;clear:both;visibility:hidden;height:0;overflow:hidden;}
+    </style>
+</head>
+<body>
+<div id="shengbei" class="container">
+    圣杯布局
+    <div class="header">header</div>
+    <div class="wrapper clearfix">
+        <div class="main col">
+            main
+        </div>
+        <div class="left col">
+            left
+        </div>
+        <div class="right col">
+            right
+        </div>
+    </div>
+    <div class="footer">footer</div>
+</div>
+<div id="bysf" class="container">
+    双飞翼布局
+    <div class="header">header</div>
+    <div class="wrapper clearfix">
+        <div class="main col">
+            <div class="main-wrap">
+                main
+            </div>
+        </div>
+        <div class="left col">
+            left
+        </div>
+        <div class="right col">
+            right
+        </div>
+    </div>
+    <div class="footer">footer</div>
+</div>
+</body>
+</html>
